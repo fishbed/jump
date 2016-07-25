@@ -1,4 +1,4 @@
-package main
+package jump
 
 import (
     "fmt"
@@ -27,7 +27,7 @@ func main() {
     defer glfw.Terminate()
 
     // アプリウィンドウ表示
-    window, err := glfw.CreateWindow(windowWidth, windowHeight, "Hello", nil, nil) 
+    window, err := glfw.CreateWindow(windowWidth, windowHeight, "Game of jump", nil, nil) 
     if err != nil {
         panic(err)
     }
@@ -150,12 +150,12 @@ func setScene () {
   * 敵オブジェクトの表示
   */
   func drawEnemy_1()  {
-	// 敵の諸元設定
-	var enemy character
-	enemy.weight = 0.1
-	enemy.height = 0.1
-	enemy.x      = 0.1
-	enemy.y      =-0.05
+    // 敵の諸元設定
+    var enemy character
+    enemy.weight = 0.1
+    enemy.height = 0.1
+    enemy.x      = 0.1
+    enemy.y      =-0.05
       
     gl.Begin(gl.QUADS)
     gl.Color3f(0.5,0.5,0.5)
@@ -167,12 +167,12 @@ func setScene () {
       
   }
   func drawEnemy_2()  {
-	// 敵の諸元設定
-	var enemy character
-	enemy.weight = 0.1
-	enemy.height = 0.1
-	enemy.x      =-0.2
-	enemy.y      =-0.05
+    // 敵の諸元設定
+    var enemy character
+    enemy.weight = 0.1
+    enemy.height = 0.1
+    enemy.x      =-0.2
+    enemy.y      =-0.05
 
     gl.Begin(gl.QUADS)
     gl.Color3f(0.75,0.75,0.75)
@@ -210,6 +210,6 @@ func setScene () {
  /**
   * 場外判定
   */
-  func checkOutside() bool  {
-    return false
+  func checkOnStage() bool  {
+    return true
   }
