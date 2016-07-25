@@ -1,4 +1,4 @@
-package jump
+package main
 
 import (
     "fmt"

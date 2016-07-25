@@ -2,7 +2,7 @@
  * test ファイル
  * 実行コマンド ： go test jump.go jump_test.go
  */
-package jump
+package main
 
 import (
     "testing"
