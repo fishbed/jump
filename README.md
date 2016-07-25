@@ -14,4 +14,4 @@ And program's target is simple 2D game.
 - character hitbox
 
 #DEMO
-![demo image.](https://github.com/fishbed/jump/demo_image.png)
+![demo image.](https://raw.githubusercontent.com/fishbed/jump/master/demo_image.png)
