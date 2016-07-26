@@ -40,7 +40,7 @@ func main() {
     fmt.Println("OpenGL version", gl.GoStr(gl.GetString(gl.VERSION)))
 
     setScene ()
-	// 表示用のループ
+    // 表示用のループ
     for !window.ShouldClose() {
         drawScene()
         window.SwapBuffers()
@@ -190,11 +190,11 @@ func setScene () {
   func drawStage()  {
     
 	// ステージの諸元設定
-	var stage character
-	stage.weight =  1.8
-	stage.height =  1.8
-	stage.x      = -0.9
-	stage.y      =  0.9
+    var stage character
+    stage.weight =  1.8
+    stage.height =  1.8
+    stage.x      = -0.9
+    stage.y      =  0.9
 
     // ステージ表示
     gl.Begin(gl.QUADS)
