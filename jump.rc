@@ -1,0 +1,7 @@
+## コマンド:windres --output-format=coff -o ./jump.syso ./jump.rc
+## MinGWが必要
+## @see http://qiita.com/zetamatta/items/dd63a2ff4d01fdb6709a
+
+#include <winver.h>
+
+GOPHER ICON jump.ico
